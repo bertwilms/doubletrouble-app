@@ -22,7 +22,7 @@ export const wedstrijdData = [
         tijd: "09:00"
     },
     {
-        wedstrijd: 2,
+        wedstrijd: 3,
         ploeg1_speler1: "Bert", 
         ploeg1_speler2: "Jo", 
         ploeg2_speler1: "Marc",
@@ -33,7 +33,7 @@ export const wedstrijdData = [
         tijd: "09:00"
     },
     {
-        wedstrijd: 2,
+        wedstrijd: 4,
         ploeg1_speler1: "Bert", 
         ploeg1_speler2: "Nico", 
         ploeg2_speler1: "Marc",
