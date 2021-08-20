@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Card from "./components/Card.js" ;
+import Scheduled from "./components/Scheduled.js" ;
 import { wedstrijdData } from './data/wedstrijdData';
 
 const wedstrijdItem = {
@@ -26,7 +27,7 @@ function App() {
         <div className="card-header"> Wedstrijden </div>
         {wedstrijdData.map((data, key) => {
         return ( 
-        <Card
+        <Scheduled
           id={data.wedstrijd}
           datum={data.datum}
           tijd={data.tijd}
