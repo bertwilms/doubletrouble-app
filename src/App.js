@@ -1,49 +1,37 @@
-import logo from './logo.svg';
+import React from "react" ;
+import {  BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import styled from "styled-components" ;
 import './App.css';
-import Card from "./components/Card.js" ;
-import Scheduled from "./components/Scheduled.js" ;
-import { wedstrijdData } from './data/wedstrijdData';
+import WedstrijdPage from "./pages/WedstrijdPage";
+import KlassementPage from "./pages/KlassementPage";
 
-const wedstrijdItem = {
-  id: 1,
-  datum: "zondag 22 augustus",
-  tijd: "9:15",
-  speler1: "Bert",
-  speler2: "Jo",
-  speler3: "Wim",
-  speler4: "Marc",
-  spelervrij: "Nico",
-//  image: food,
-  description:
-    "Bu kremsi ve baharatlı avokado sosu, günlük taco'larınızı hazırlamak için harika seçeneklerden biri. Geleneksel olarak flautas veya taquitos ile servis edilir, ancak bazı vegan enchiladalara da harika bir katkı sağlar.",
-};
+
+
+const Wrapper = styled.div`
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p className="App-title"> Double Trouble          
-        </p>
-        <div className="card-header"> Wedstrijden </div>
-        {wedstrijdData.map((data, key) => {
-        return ( 
-        <Scheduled
-          id={data.wedstrijd}
-          datum={data.datum}
-          tijd={data.tijd}
-          speler1={data.ploeg1_speler1}
-          speler2={data.ploeg1_speler2}
-          speler3={data.ploeg2_speler1}
-          speler4={data.ploeg2_speler2}
-          ploeg1={data.ploeg1}
-          ploeg2={data.ploeg2}
-          //liked={isLiked}
-          //likeCount={like}
-      />  )
-        })}        
-        
-      </header>
-    </div>
+    <React.Fragment>
+      <Wrapper>
+        <Router>
+          <Switch>
+            <Route path="/klassement">
+              <KlassementPage />
+            </Route>
+            <Route path="/">
+              <WedstrijdPage />
+            </Route>            
+          </Switch>
+        </Router>
+      </Wrapper>
+    </React.Fragment>
   );
 }
 

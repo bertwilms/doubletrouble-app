@@ -7,12 +7,12 @@
 	border-color:#1B2A41;
 	border-style: solid;
 	transition: 200ms;
-    max-width: 380px;
+    max-width: 100%;
 }
 
 .card:hover {
 	transition: 200ms;
-	border: 3px;
+	border: 1px;
 	border-color: #CCC9DC;
 	border-style: solid;
 }
@@ -25,16 +25,14 @@
 }
 
 .profile {
-	width: 2.5rem;
-	height: 2.5rem;
-	background-color: tomato;
-	border-radius: 50%;
+	width: 1rem;
+	height: 1rem;
+	background-color: #fff;
 	margin: 10px;
-	font-size: 20pt;
-	text-align: center;
-	font-weight: bold;
-	color: white;
-	justify-content: center;
+	font-size: 10pt;
+	text-align: left;
+	justify-content: left;	
+	margin-top: 5px;
 }
 
 .letter {
@@ -42,7 +40,7 @@
 }
 
 .card-title-group {
-	justify-content: center;
+	justify-content: center;	
 }
 
 .card-title {
@@ -53,8 +51,15 @@
 }
 .card-date {
 	flex: 0.3;
-	font-size: small;
+	font-size: medium;
 	margin-top: 0;
+	width: 250px;
+}
+.card-date-right {
+	flex: 0.3;
+	font-size: medium;
+	margin-top: 0;
+	text-align: right;
 }
 
 .card-image {
@@ -82,3 +87,138 @@
 	font-size: small;
 	margin-left: 10px;
 }
+
+.wedstrijdtabel{
+	display:flex ; 
+	width:28rem;
+	justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 0.1rem;	
+	border-radius: 10px;
+	border: 1px;
+	border-color:#1B2A41;
+	border-style: solid;
+	margin-bottom: 3px;
+	
+}
+
+.wedstrijdtabelheader {
+	display: flex;
+    width:28rem;
+	height: 3rem;
+    background: #22356d;
+    align-items: center;
+	color: #281e1e;	
+	padding-top: 0.1rem;
+	border-radius: 10px;
+	
+}
+
+.wedstrijdtabeldata {
+	width: 33%;
+    font-family: "Fira Sans",Helvetica,Arial,sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    color: #fff;
+    padding: 0 1rem;
+	text-align:center;
+}
+
+.wedstrijdteams {
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+	width:28rem;
+}
+
+.teamscolumn {
+ display: flex;
+}
+.team {
+	margin-bottom: 0;
+}
+
+.u-list-clean{
+	list-style: none;
+    margin-left: 0;
+}
+
+.team-item {
+	display: flex;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.team-item:last-child {
+    margin-bottom: 1rem;
+}
+
+.team-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 11rem;
+	margin-right: 1rem;	
+	background-color: #CCC9DC;
+	border-radius: 1rem;
+	transition: all .2s ease-in-out;
+	cursor: pointer;		
+}
+
+.team-img{
+	align-self: center;
+	width: 11.5rem;
+    height: 11.5rem;
+    border-radius: 50%;
+    background-position: center top;
+    background-size: cover;
+}
+
+.team-details {
+	
+}
+
+.break {
+	flex-basis: 100%;	
+  }
+
+.team-vs{
+	font-family: "Fira Sans",Helvetica,Arial,sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #22356d;
+    letter-spacing: .017rem;	
+}
+
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+    list-style: none;
+    margin: 0; 
+    background:#fff;
+  }
+
+  .hyperlink {
+	text-decoration: none;
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+	list-style: none;
+    margin: 0; 
+  }
+
+  .ul-1{
+	text-decoration: none;
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+	list-style: none;    
+  }
+  .li-1{
+	text-decoration: none;
+	margin-right: 10px;
+  }

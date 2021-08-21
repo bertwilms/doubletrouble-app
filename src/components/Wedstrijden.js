@@ -1,8 +1,7 @@
 import React from "react";
-import "./Card.css";
 
-export default function Played(props) {
-    return (     
+export default function Wedstrijden(props) {
+    return (
         <div class="teamscolumn">
             <div className="profile">
             <span>{props.id}</span>
@@ -20,12 +19,7 @@ export default function Played(props) {
                   <div>{props.speler3}</div>
                   <div>{props.speler4}</div>                  
                 </div>
-              </div>  
-              <div>
-                <div class="team-details">
-                  <div>{props.ploeg1} - {props.ploeg2}</div>                  
-                </div>
               </div>                                  
-            </div>                
-      )    
+            </div>            
+    );
 }
