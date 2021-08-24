@@ -24,17 +24,6 @@
 
 }
 
-.profile {
-	width: 1rem;
-	height: 1rem;
-	background-color: #fff;
-	margin: 10px;
-	font-size: 10pt;
-	text-align: left;
-	justify-content: left;	
-	margin-top: 5px;
-}
-
 .letter {
 	vertical-align: middle;
 }
@@ -90,7 +79,7 @@
 
 .wedstrijdtabel{
 	display:flex ; 
-	width:28rem;
+	width:23rem;
 	justify-content: space-around;
     flex-wrap: wrap;
     padding-bottom: 0.1rem;	
@@ -98,42 +87,91 @@
 	border: 1px;
 	border-color:#1B2A41;
 	border-style: solid;
-	margin-bottom: 3px;
+	margin-bottom: 3px;	
 	
 }
 
 .wedstrijdtabelheader {
 	display: flex;
-    width:28rem;
-	height: 3rem;
+    height: 4rem;
     background: #22356d;
     align-items: center;
 	color: #281e1e;	
 	padding-top: 0.1rem;
-	border-radius: 10px;
-	
+	border-radius: 10px;	
+}
+
+.klassementtable {
+	height: 15rem;
+	width:23rem;
+    align-items: center;
+	border-spacing: 0px;
+	border-collapse:separate;
+    border:solid#22356d 1px;
+    border-radius:6px;
+    -moz-border-radius:6px;
+}
+
+.klassementtable__header {
+	background: #22356d;
+	background-color: #22356d;
+	border-color:#22356d;
+	height: 4rem;
+    background: #22356d;
+    align-items: center;
+	color: #fff;	
+	padding-top: 0.1rem;	
+}
+.klassement__data {
+	font-family: "Fira Sans",Helvetica,Arial,sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    padding: 0 1rem;
+	text-align:center;
+
 }
 
 .wedstrijdtabeldata {
-	width: 33%;
-    font-family: "Fira Sans",Helvetica,Arial,sans-serif;
+	font-family: "Fira Sans",Helvetica,Arial,sans-serif;
     font-weight: 200;
     font-size: 1rem;
     color: #fff;
     padding: 0 1rem;
 	text-align:center;
 }
+.klassementtabeldata {
+	font-family: "Fira Sans",Helvetica,Arial,sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    color: black;
+    padding: 0 1rem;
+	text-align:center;
+}
 
 .wedstrijdteams {
 	display: flex;
-    justify-content: space-around;
-    align-items: center;
-	width:28rem;
+    justify-content: space-between ;
+    align-items: center;		
 }
 
-.teamscolumn {
- display: flex;
+.wedstrijdoverig {
+	display: flex;
+    justify-content: space-between ;
+    align-items: center;			
+	margin-bottom: 5px;
+	margin-top: 5px;
 }
+.profile {
+	width: 1.5rem;
+	height: 1.5rem;
+	background-color:rgb(101, 160, 175);
+	color: white;
+	border-radius: 1rem;
+	text-align: center;
+	justify-content: center;
+	margin-top: 2px;
+}
+
 .team {
 	margin-bottom: 0;
 }
@@ -144,9 +182,7 @@
 }
 
 .team-item {
-	display: flex;
-    width: 100%;
-    text-align: center;
+	text-align: center;
     margin-bottom: 2rem;
 }
 
@@ -158,25 +194,28 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 11rem;
+	width: 8rem;
 	margin-right: 1rem;	
-	background-color: #CCC9DC;
+	background-color: rgb(101, 160, 175);
 	border-radius: 1rem;
 	transition: all .2s ease-in-out;
-	cursor: pointer;		
+	cursor: pointer;	
+	color:white	;	
 }
 
-.team-img{
+.team__img{
 	align-self: center;
-	width: 11.5rem;
-    height: 11.5rem;
+	padding:0;
+	width: 3rem;
+    height: 3rem;
     border-radius: 50%;
-    background-position: center top;
+    background-position: left center;
     background-size: cover;
 }
 
 .team-details {
-	
+  text-align: center;	
+
 }
 
 .break {
@@ -185,10 +224,11 @@
 
 .team-vs{
 	font-family: "Fira Sans",Helvetica,Arial,sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: #22356d;
     letter-spacing: .017rem;	
+	text-align: center;
 }
 
 
@@ -198,8 +238,7 @@
     justify-content: space-between;
     
     list-style: none;
-    margin: 0; 
-    background:#fff;
+    margin: 0;     
   }
 
   .hyperlink {
@@ -221,4 +260,96 @@
   .li-1{
 	text-decoration: none;
 	margin-right: 10px;
+  }
+
+   
+  .navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 0.1em;
+    color:#22356d;
+	font-size: 1.1rem;
+	font-weight: 600;	
+  }
+
+  
+.hidden {
+	visibility:hidden;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 2px;	
+  margin-top: 2px;	
+}
+
+.topnav__main {
+	justify-content: space-between;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 4px 4px;
+  text-decoration: none;
+  font-size: 17px;  
+  border-radius: 10px;
+  border: 1px;  
+  border-style: solid;  
+  margin-bottom: 2px;	
+  margin-top: 2px;	
+  background-color: #CCC9DC;
+  }
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: black;
+  border-color:#1B2A41;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #22356d;
+  color: white;
+  border-color:#1B2A41;
+
+}
+
+h2 {
+    font-size: 12px;
+    color: #22356d;
+    font-family: "Open Sans Condensed", sans-serif;
+	border-radius: 10px;
+    border: 1px;  
+    border-style: solid;  
+	background-color: #CCC9DC;
+	padding:0.5rem;
+}
+
+.container {
+	position: relative;
+	text-align: center;
+	color: white;
+  }
+
+  .bottom-right{
+	position: absolute;
+	top: 8px;
+	left: 16px;
+    font-size: 25px;
+	font-weight: 400;	
+  }
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+	width:23rem;    
+    list-style: none;
+    margin: 0;     
   }

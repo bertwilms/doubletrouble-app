@@ -1,6 +1,5 @@
 
-export default function Klassement(props) {   
-    console.log ( props)
+export default function Klassement2(props) {   
     return (
        <div class="wedstrijdoverig break">            
 

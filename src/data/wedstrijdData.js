@@ -101,11 +101,11 @@ export const wedstrijdData = [
       "ploeg1_speler2":"Nico",
       "ploeg2_speler1":"Bert",
       "ploeg2_speler2":"Wim",
-      "ploeg1":null,
-      "ploeg2":null,
+      "ploeg1":12,
+      "ploeg2":15,
       "terrein":null,
-      "datum":"21-08-2021",
-      "tijd":"08:30"
+      "datum":"2021-08-01",
+      "tijd":"09:00"
     },
     {
       "wedstrijd":10,
@@ -115,9 +115,9 @@ export const wedstrijdData = [
       "ploeg2_speler2":"Nico",
       "ploeg1":null,
       "ploeg2":null,
-      "terrein":null,
-      "datum":null,
-      "tijd":null
+      "terrein":2,
+      "datum":"2021-08-28",
+      "tijd":"09:15"
     },
     {
       "wedstrijd":11,
@@ -127,9 +127,9 @@ export const wedstrijdData = [
       "ploeg2_speler2":"Wim",
       "ploeg1":null,
       "ploeg2":null,
-      "terrein":null,
-      "datum":null,
-      "tijd":null
+      "terrein":2,
+      "datum":"2021-08-31",
+      "tijd":"19:30"
     },
     {
       "wedstrijd":12,
@@ -139,9 +139,9 @@ export const wedstrijdData = [
       "ploeg2_speler2":"Nico",
       "ploeg1":null,
       "ploeg2":null,
-      "terrein":null,
-      "datum":null,
-      "tijd":null
+      "terrein":2,
+      "datum":"2021-09-02",
+      "tijd":"19:30"
     },
     {
       "wedstrijd":13,
@@ -240,4 +240,3 @@ export const wedstrijdData = [
       "tijd":null
     }
     ]
-  
