@@ -116,8 +116,8 @@ export const wedstrijdData = [
       "ploeg1":null,
       "ploeg2":null,
       "terrein":2,
-      "datum":"2021-08-28",
-      "tijd":"09:15"
+      "datum":"2021-08-29",
+      "tijd":"09:30"
     },
     {
       "wedstrijd":11,

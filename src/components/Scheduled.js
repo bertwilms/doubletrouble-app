@@ -61,7 +61,7 @@ return (
 
         </div>
       </div>
-      <div > Hier komt weerInfo (props.datum)
+      <div > &nbsp; 
       </div>
 
 

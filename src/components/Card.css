@@ -286,9 +286,6 @@
   margin-top: 2px;	
 }
 
-.topnav__main {
-	justify-content: space-between;
-}
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -337,7 +334,7 @@ h2 {
 	color: white;
   }
 
-  .bottom-right{
+  .top-left{
 	position: absolute;
 	top: 8px;
 	left: 16px;

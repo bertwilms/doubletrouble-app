@@ -21,10 +21,10 @@ function App() {
     <React.Fragment>
       <Wrapper>
       <div class="container">
-        <img src={image} alt="Padel" height={100} width={500}/> 
-        <div class="bottom-right">Masters of Padel</div>
+        <img src={image} alt="Padel" height={100} width={600}/> 
+        <div class="top-left">Masters of Padel</div>
       </div>
-      <div class="topnav">
+      <div class="mainnav">
         <a href="/tespelen">Wedstrijden</a>
         <a href="/klassement">Klassement</a>
      </div>   
