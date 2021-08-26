@@ -7,12 +7,12 @@
 	border-color:#1B2A41;
 	border-style: solid;
 	transition: 200ms;
-    max-width: 380px;
+    max-width: 100%;
 }
 
 .card:hover {
 	transition: 200ms;
-	border: 3px;
+	border: 1px;
 	border-color: #CCC9DC;
 	border-style: solid;
 }
@@ -24,25 +24,12 @@
 
 }
 
-.profile {
-	width: 2.5rem;
-	height: 2.5rem;
-	background-color: tomato;
-	border-radius: 50%;
-	margin: 10px;
-	font-size: 20pt;
-	text-align: center;
-	font-weight: bold;
-	color: white;
-	justify-content: center;
-}
-
 .letter {
 	vertical-align: middle;
 }
 
 .card-title-group {
-	justify-content: center;
+	justify-content: center;	
 }
 
 .card-title {
@@ -53,8 +40,15 @@
 }
 .card-date {
 	flex: 0.3;
-	font-size: small;
+	font-size: medium;
 	margin-top: 0;
+	width: 250px;
+}
+.card-date-right {
+	flex: 0.3;
+	font-size: medium;
+	margin-top: 0;
+	text-align: right;
 }
 
 .card-image {
@@ -82,3 +76,277 @@
 	font-size: small;
 	margin-left: 10px;
 }
+
+.wedstrijdtabel{
+	display:flex ; 
+	width:23rem;
+	justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 0.1rem;	
+	border-radius: 10px;
+	border: 1px;
+	border-color:#1B2A41;
+	border-style: solid;
+	margin-bottom: 3px;	
+	
+}
+
+.wedstrijdtabelheader {
+	display: flex;
+    height: 4rem;
+    background: #22356d;
+    align-items: center;
+	color: #281e1e;	
+	padding-top: 0.1rem;
+	border-radius: 10px;	
+}
+
+.klassementtable {
+	height: 15rem;
+	width:23rem;
+    align-items: center;
+	border-spacing: 0px;
+	border-collapse:separate;
+    border:solid#22356d 1px;
+    border-radius:6px;
+    -moz-border-radius:6px;
+}
+
+.klassementtable__header {
+	background: #22356d;
+	background-color: #22356d;
+	border-color:#22356d;
+	height: 4rem;
+    background: #22356d;
+    align-items: center;
+	color: #fff;	
+	padding-top: 0.1rem;	
+}
+.klassement__data {
+	font-family: "Fira Sans",Helvetica,Arial,sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    padding: 0 1rem;
+	text-align:center;
+
+}
+
+.wedstrijdtabeldata {
+	font-family: "Fira Sans",Helvetica,Arial,sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    color: #fff;
+    padding: 0 1rem;
+	text-align:center;
+}
+.klassementtabeldata {
+	font-family: "Fira Sans",Helvetica,Arial,sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    color: black;
+    padding: 0 1rem;
+	text-align:center;
+}
+
+.wedstrijdteams {
+	display: flex;
+    justify-content: space-between ;
+    align-items: center;		
+}
+
+.wedstrijdoverig {
+	display: flex;
+    justify-content: space-between ;
+    align-items: center;			
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.profile {
+	width: 1.5rem;
+	height: 1.5rem;
+	background-color:rgb(101, 160, 175);
+	color: white;
+	border-radius: 1rem;
+	text-align: center;
+	justify-content: center;
+	margin-top: 2px;
+}
+
+.team {
+	margin-bottom: 0;
+}
+
+.u-list-clean{
+	list-style: none;
+    margin-left: 0;
+}
+
+.team-item {
+	text-align: center;
+    margin-bottom: 2rem;
+}
+
+.team-item:last-child {
+    margin-bottom: 1rem;
+}
+
+.team-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 8rem;
+	margin-right: 1rem;	
+	background-color: rgb(101, 160, 175);
+	border-radius: 1rem;
+	transition: all .2s ease-in-out;
+	cursor: pointer;	
+	color:white	;	
+}
+
+.team__img{
+	align-self: center;
+	padding:0;
+	width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-position: left center;
+    background-size: cover;
+}
+
+.team-details {
+  text-align: center;	
+
+}
+
+.break {
+	flex-basis: 100%;	
+  }
+
+.team-vs{
+	font-family: "Fira Sans",Helvetica,Arial,sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #22356d;
+    letter-spacing: .017rem;	
+	text-align: center;
+}
+
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+    list-style: none;
+    margin: 0;     
+  }
+
+  .hyperlink {
+	text-decoration: none;
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+	list-style: none;
+    margin: 0; 
+  }
+
+  .ul-1{
+	text-decoration: none;
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+	list-style: none;    
+  }
+  .li-1{
+	text-decoration: none;
+	margin-right: 10px;
+  }
+
+   
+  .navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 0.1em;
+    color:#22356d;
+	font-size: 1.1rem;
+	font-weight: 600;	
+  }
+
+  
+.hidden {
+	visibility:hidden;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 2px;	
+  margin-top: 2px;	
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 4px 4px;
+  text-decoration: none;
+  font-size: 17px;  
+  border-radius: 10px;
+  border: 1px;  
+  border-style: solid;  
+  margin-bottom: 2px;	
+  margin-top: 2px;	
+  background-color: #CCC9DC;
+  }
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: black;
+  border-color:#1B2A41;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #22356d;
+  color: white;
+  border-color:#1B2A41;
+
+}
+
+h2 {
+    font-size: 12px;
+    color: #22356d;
+    font-family: "Open Sans Condensed", sans-serif;
+	border-radius: 10px;
+    border: 1px;  
+    border-style: solid;  
+	background-color: #CCC9DC;
+	padding:0.5rem;
+}
+
+.container {
+	position: relative;
+	text-align: center;
+	color: white;
+  }
+
+  .top-left{
+	position: absolute;
+	top: 8px;
+	left: 16px;
+    font-size: 25px;
+	font-weight: 400;	
+  }
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+	width:23rem;    
+    list-style: none;
+    margin: 0;     
+  }
