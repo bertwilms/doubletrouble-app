@@ -2,7 +2,6 @@ import React from "react";
 import Played from "../components/Played.js"
 import { wedstrijdData } from '../data/wedstrijdData';
 import Container from "../components/container.component.js";
-const axios = require('axios');
 
 const GespeeldPage = () => {
   var gespeeld = wedstrijdData.filter(function(wedstrijd) {
