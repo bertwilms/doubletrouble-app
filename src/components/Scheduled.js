@@ -2,7 +2,7 @@ import React from "react";
 import "./Card.css";
 
 export default function Scheduled(props) {
- 
+
   const speeldatum = ( searchDate ) => {
     var days = ['Zondag','Maandag','Dinsdag','Woensdag','Donderdag','Vrijdag','Zaterdag'];
     var months = ['Januari','Februari','Maart','April','Mei','Juni','Juli','Augustus','September','Oktober','November','December'];
@@ -14,8 +14,8 @@ export default function Scheduled(props) {
               + months[new Date ( searchDate ).getMonth() ] ;              
 
     return datum ;
-  }  
- 
+  }    
+
 return (
   <div class="wedstrijdtabel">
     <div class="wedstrijdtabelheader">
@@ -61,7 +61,7 @@ return (
 
         </div>
       </div>
-      <div > &nbsp; 
+      <div > { props.weather}
       </div>
 
 
