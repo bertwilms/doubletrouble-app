@@ -2,20 +2,20 @@ export const klassementData = [
     {
       "id":1,
       "voornaam":"Jo",
-      "gespeeld":7,
-      "punten":11,
-      "games_voor":108,
-      "games_tegen":75,
-      "verschil":33
+      "gespeeld":8,
+      "punten":13,
+      "games_voor":125,
+      "games_tegen":83,
+      "verschil":42
     },
     {
       "id":2,
       "voornaam":"Bert",
-      "gespeeld":7,
+      "gespeeld":8,
       "punten":9,
-      "games_voor":99,
-      "games_tegen":81,
-      "verschil":18
+      "games_voor":107,
+      "games_tegen":98,
+      "verschil":9
     },
     {
       "id":3,
@@ -28,21 +28,20 @@ export const klassementData = [
     },
     {
       "id":4,
-      "voornaam":"Nico",
-      "gespeeld":7,
-      "punten":4,
-      "games_voor":78,
-      "games_tegen":100,
-      "verschil":-22
+      "voornaam":"Marc",
+      "gespeeld":8,
+      "punten":5,
+      "games_voor":99,
+      "games_tegen":106,
+      "verschil":-7
     },
     {
       "id":5,
-      "voornaam":"Marc",
-      "gespeeld":7,
-      "punten":3,
-      "games_voor":82,
-      "games_tegen":98,
-      "verschil":-16
+      "voornaam":"Nico",
+      "gespeeld":8,
+      "punten":4,
+      "games_voor":86,
+      "games_tegen":117,
+      "verschil":-31
     }
     ]
-;
