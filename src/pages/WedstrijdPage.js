@@ -7,8 +7,9 @@ const axios = require('axios');
   
 
 const WedstrijdPage = () => {  
-  const [weatherdata, setWeatherData] = useState('');
+  const [weatherdata, setWeatherData] = useState([]);
   useEffect(() => {
+    console.log ("useeffect")
     const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
     // Location TC Tessenderlo
     const longitude = 5.089368256628124 ; 
@@ -34,6 +35,8 @@ const WedstrijdPage = () => {
   
 
   const formatWeaterData = (datum, uur) => {
+    console.log (weatherdata);
+    console.log (typeof weatherdata.hourly[0]);
     //const searchDate = datum + " " + uur.substring(0, 2) + ":00";
     var weerinfo = "";
     if (  Array.isArray(weatherdata.daily) ) {
@@ -64,7 +67,7 @@ const WedstrijdPage = () => {
         <a href="/gespeeld">gespeeld</a>
      </div>     
      <h2> Ingepland </h2>
-     {scheduled.map((data, key) => {       
+     {scheduled.map((data, key) => {      
         return ( 
         <Scheduled
           id={data.wedstrijd}
@@ -77,7 +80,7 @@ const WedstrijdPage = () => {
           ploeg1={data.ploeg1}
           ploeg2={data.ploeg2}
           terrein={data.terrein}
-          weather={ formatWeaterData(data.datum, data.tijd)}
+          weather={weatherdata.daily}
           //liked={isLiked}
           //likeCount={like}
       />  )
