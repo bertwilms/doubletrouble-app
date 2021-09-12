@@ -1,6 +1,4 @@
 import React from "react";
-import Scheduled from "../components/Scheduled.js" ;
-import Wedstrijden from "../components/Wedstrijden.js"
 import Played from "../components/Played.js"
 import { wedstrijdData } from '../data/wedstrijdData';
 import Container from "../components/container.component.js";
@@ -9,7 +7,6 @@ const GespeeldPage = () => {
   var gespeeld = wedstrijdData.filter(function(wedstrijd) {
     return wedstrijd.tijd !== null && wedstrijd.ploeg1 !== null ;
   }) ;  
-
   return (
    <React.Fragment>
      <Container>       
@@ -18,7 +15,7 @@ const GespeeldPage = () => {
         <a class="active" href="/gespeeld">gespeeld</a>
      </div>          
      <h2> Reeds gespeeld </h2>
-<div class="wedstrijdtabel">
+ <div class="wedstrijdtabel">
 {gespeeld.map((data, key) => {
         return ( 
         <Played

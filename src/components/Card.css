@@ -332,7 +332,24 @@ h2 {
 	position: relative;
 	text-align: center;
 	color: white;
+	
   }
+
+.message-container {
+	position: flex;
+	flex-direction: row;
+	text-align: left;
+	justify-content: flex-start;  
+	align-items: flex-start;
+	padding: 0.1rem;
+}
+.message-position {
+		padding: 5rem;
+		font-size: 15px;
+		font-weight: 200;	
+		border: 1px;  
+		border-style: solid;
+}
 
   .top-left{
 	position: absolute;
