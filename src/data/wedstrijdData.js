@@ -65,11 +65,11 @@ export const wedstrijdData = [
     "ploeg1_speler2":"Bert",
     "ploeg2_speler1":"Marc",
     "ploeg2_speler2":"Jo",
-    "ploeg1":null,
-    "ploeg2":null,
-    "terrein":null,
-    "datum":null,
-    "tijd":null
+    "ploeg1":18,
+    "ploeg2":11,
+    "terrein":3,
+    "datum":"2022-02-19",
+    "tijd":"10:00"
   },
   {
     "wedstrijd":7,
